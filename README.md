@@ -6,17 +6,17 @@ This repository contains a Dockerfile that serves as the base image with all ess
 
 ## Installation and Usage
 
-This image is available on DockerHub. To pull it, run:
+This image is available on DockerHub. To pull the latest image (16.04), run:
 
 ```
-docker pull computersciencehouse/base-ubuntu16.04
+docker pull computersciencehouse/s2i-base-ubuntu
 ```
 
-To build the base image from scratch, run:
+To build the base image for 16.04 from scratch, run:
 
 ```
 git clone https://github.com/ComputerScienceHouse/s2i-base-ubuntu.git
-cd s2i-base-ubuntu
+cd s2i-base-ubuntu/16.04
 make build
 ```
 
@@ -25,6 +25,6 @@ make build
 This repository includes the S2I test framework, which launches a simple test to make sure the image builds and runs properly.
 
 ```
-cd s2i-base-ubuntu
+cd s2i-base-ubuntu/16.04
 make test
 ```
